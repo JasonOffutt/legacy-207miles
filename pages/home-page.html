@@ -1,0 +1,23 @@
+<div class="column media body">
+	<p style="padding: 30px; line-height: 25px; margin-top: 50px;"><strong>The 2012 207Miles ride was a HUGE success.  Thank you to everyone who rode, volunteered, or donated.  The riders will return to Rocky Point on March 16 to build two homes with some of the funds they raised.  Stay tuned for videos and pictures of the 2012 207Miles ride.  Until then, please consider helping the riders reach their goals!  <a href="http://eepurl.com/jh1J9" target="_blank">Here</a> is a list of all the riders and links to their ride pages.</strong></p>
+</div> 
+
+<div class="column sidebar">
+	<ul class="summary-stats">
+		<li class="odd"><span id="count">0</span>Riders</li>
+		<li><span id="dollars">0</span>Raised</li>
+		<li class="odd"><span id="days">0</span>Days Left</li>
+		<li><a href="/the-ride" title="Register Here">Register Here</a></li>
+	</ul>
+	<p class="break">The 207 Miles charity ride was launched out of a desire to increase awareness of the poverty so close to home and to raise funds for those fighting it. The ride is a two day, 207 miles, cycling event traveling from Peoria, Arizona to Puerto Pe&ntilde;asco, Mexico. In February 2012 more than 50 riders, with the help of corporate and individual sponsors, will raise around $50,000 to help fight poverty in the barrios of Puerto Pe&ntilde;asco. Join us.</p>
+</div>
+<script type="text/javascript">
+	$(function() {
+		var rideDay = Date.parse('2/10/2012');
+		var dayLength = 1000 * 60 * 60 * 24;
+		var today = new Date().getTime();		
+		var difference = Math.abs(rideDay - today);
+		var days = Math.round(difference / dayLength);
+		$('#days').html(days);
+	});
+</script>
